@@ -1,0 +1,145 @@
+
+.submit-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  background-color: rgb(192, 213, 234);
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+form {
+  padding-top: 20px;
+  width: 475px;
+}
+
+label {
+  font-weight: bold;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+select {
+  padding: 5px;
+  border: 0px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  background: #0e5aa8;
+}
+
+button:hover {
+  background: #063e77;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+}
+
+.fields {
+  margin-bottom: 10px;
+}
+
+.msg {
+  padding: 10px 49px;
+}
+
+.msg.success {
+  float: inline-end;
+  background: #ccffea;
+  color: #037155;
+}
+
+.msg.failed {
+  float: inline-end;
+  background: #ffe2e2;
+  color: #d40303;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+}
+
+th {
+  background-color: #FFF;
+}
+
+.ticket_list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.ticket_details th,
+.ticket_details td {
+  border-bottom: 1px solid #cae4ff;
+  padding: 15px;
+}
+
+.ticket_details {
+  width: 500px;
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cae4ff;
+  padding: 15px;
+}
+
+.ticket_data {
+  margin-right: 10px;
+}
+
+.ticket_response {
+  width: 100%;
+}
+
+.ticket_details button {
+  float: inline-end;
+  margin-top: 10px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .submit-form-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .submit-form-card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
