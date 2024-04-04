@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors()); // Use CORS middleware
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://sajid:sAax4VB5sYRCf4bz@cluster0.zppd3.mongodb.net/helpdesk?retryWrites=true&w=majority&appName=Cluster0",
+mongoose.connect("mongodb+srv://sajid:sAax4VB5sYRCf4bz@cluster0.zppd3.mongodb.net/helpdesk?retryWrites=true&w=majority&appName=Cluster0&directConnection=true",
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
