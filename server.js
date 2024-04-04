@@ -3,7 +3,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const cors = require("cors"); 
+const cors = require("cors");
 
 // Initialize Express app
 const app = express();
@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 app.use(cors()); // Use CORS middleware
 
 // Connect to MongoDB
-mongoose.connect("mongodb://0.0.0.0:27017/helpdesk", {
+mongoose.connect("mongodb+srv://sajid:sAax4VB5sYRCf4bz@cluster0.zppd3.mongodb.net/helpdesk?retryWrites=true&w=majority&appName=Cluster0",
+{
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
